@@ -1,3 +1,8 @@
 import { getToken } from "./API-calls";
 
-getToken();
+async function main() {
+  const token = await getToken();
+
+  console.log(token);
+}
+main();

@@ -57,7 +57,8 @@ function getToken() {
         });
         const data = yield response.json();
         const token = data.access_token;
-        console.log(token);
+        const bearerString = `Bearer ${token}`;
+        return bearerString;
     });
 }
 exports.getToken = getToken;
