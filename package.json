@@ -1,0 +1,19 @@
+{
+  "name": "paquitos-flights",
+  "version": "1.0.0",
+  "description": "tool for searching cheap flights over the internet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf build/ && tsc",
+    "run": "npm run build && node build/index.js"
+  },
+  "author": "Paquito",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.11.20",
+    "dotenv": "^16.4.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  }
+}
