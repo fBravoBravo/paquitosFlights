@@ -27,3 +27,6 @@ export async function getToken() {
   const bearerString = `Bearer ${token}`;
   return bearerString;
 }
+
+
+
