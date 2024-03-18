@@ -1,8 +1,12 @@
-import { getToken } from "./API-calls";
+import "dotenv/config";
+import { Amadeus } from "./API-module/amadeusAPI";
 
 async function main() {
-  const token = await getToken();
+  const amadeus = new Amadeus();
+  const flightOffers = await amadeus.getFlightOffers({
+    origin: "MAD",
+  });
 
-  console.log(token);
+  console.log(flightOffers);
 }
 main();
